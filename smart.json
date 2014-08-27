@@ -1,9 +1,0 @@
-{
-  "name": "q",
-  "description": "A tool for making and composing asynchronous promises in JavaScript",
-  "homepage": "http://documentup.com/kriskowal/q/",
-  "author": "Kris Kowal (http://askawizard.blogspot.com)",
-  "version": "0.9.7",
-  "git": "https://github.com/frozeman/q-meteor.git",
-  "packages": {}
-}
