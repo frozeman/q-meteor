@@ -5,7 +5,7 @@ Package.describe({
     git: "https://github.com/frozeman/q-meteor.git"
 });
 
-Package.onUse(function (api) {
+Package.on_use(function (api) {
     api.versionsFrom('METEOR@0.9.0');
 
     // EXPORT
