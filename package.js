@@ -1,7 +1,7 @@
 Package.describe({
 	name: "frozeman:q",
     summary: "A wrapper for the Q promise library from kris kowal",
-  	version: "1.0.2",
+  	version: "1.0.3",
     git: "https://github.com/frozeman/q-meteor.git"
 });
 
@@ -12,5 +12,5 @@ Package.onUse(function (api) {
     api.export('Q');
 
     // FILES
-    api.addFiles('lib/q-1/q.js', ['client', 'server']);
+    api.addFiles('lib/q-1/q.js', ['client']);
 });
