@@ -1,12 +1,12 @@
 Package.describe({
-	name: "mrt:q",
+	name: "frozeman:q",
     summary: "A wrapper for the Q promise library from kris kowal",
-  	version: "1.0.1",
+  	version: "1.0.2",
     git: "https://github.com/frozeman/q-meteor.git"
 });
 
 Package.onUse(function (api) {
-    api.versionsFrom('METEOR@0.9.0');
+    api.versionsFrom('METEOR@1.0');
 
     // EXPORT
     api.export('Q');

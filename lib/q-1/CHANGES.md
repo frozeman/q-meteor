@@ -1,5 +1,32 @@
 <!-- vim:ts=4:sts=4:sw=4:et:tw=70 -->
 
+## 1.1.2
+
+ - Removed extraneous files from the npm package by using the "files"
+   whitelist in package.json instead of the .npmignore blacklist.
+   (@anton-rudeshko)
+
+## 1.1.1
+
+ - Fix a pair of regressions in bootstrapping, one which precluded
+   WebWorker support, and another that precluded support in
+   ``<script>`` usage outright. #607
+
+## 1.1.0
+
+ - Adds support for enabling long stack traces in node.js by setting
+   environment variable `Q_DEBUG=1`.
+ - Introduces the `tap` method to promises, which will see a value
+   pass through without alteration.
+ - Use instanceof to recognize own promise instances as opposed to
+   thenables.
+ - Construct timeout errors with `code === ETIMEDOUT` (Kornel Lesiński)
+ - More descriminant CommonJS module environment detection.
+ - Dropped continuous integration for Node.js 0.6 and 0.8 because of
+   changes to npm that preclude the use of new `^` version predicate
+   operator in any transitive dependency.
+ - Users can now override `Q.nextTick`.
+
 ## 1.0.1
 
  - Adds support for `Q.Promise`, which implements common usage of the
